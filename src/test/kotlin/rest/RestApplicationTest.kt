@@ -34,8 +34,12 @@ class RestApplicationTest {
 
     @Test
     fun `'ping' should return 'PONG'`() {
-        given().`when`()
-                .get("ping").then().statusCode(200).body(equalTo("PONG"))
+        given().
+        `when`()
+            .get("ping").
+        then()
+            .statusCode(200)
+            .body(equalTo("PONG"))
     }
 
     @Test
@@ -48,14 +52,18 @@ class RestApplicationTest {
                 "text" to text,
                 "author" to author
         )
-        val json = JSONObject();
+        val json = JSONObject()
         for ((k, v) in entry) {
             json.put(k, v)
         }
 
-        given().header("Content-Type", "application/json").body(json.toString()).
-                `when`().post("/blogEntries").
-                then().statusCode(201) // assert CREATED http response code
+        given()
+            .header("Content-Type", "application/json")
+            .body(json.toString()).
+        `when`()
+            .post("/blogEntries").
+        then()
+            .statusCode(201) // assert CREATED http response code
 
         val blogEntries = repository.findAll()
         assertEquals(blogEntries.size, 1)
