@@ -19,4 +19,19 @@ There is a ping method at http://127.0.0.1:8080/ping/
 
 To run the tests, use the RestApplicationTest class.
 
-magnus.mickelsson@gmail.com
+## The lightning talk live-coding
+
+The presentation is pretty much three slides, will be put here when it's done.
+
+For the live coding, switch from master branch to the "for-demo" branch, which has no code in it,
+just the pom.xml, application.properties and the documentation .md files.
+
+Then follow the steps in [TODO](TODO.md). If you run into trouble, peek in the master branch,
+as there is a solution there that works.
+
+## Contact/feedback/praise
+
+E-mail: [magnus.mickelsson@gmail.com](mailto:magnus.mickelsson@gmail.com)
+
+If you want to buy me a beer, donate at https://www.paypal.com/pools/c/821lf4bmi6 (Pokeraidbot project donation page, but 
+will reach me anyway)
