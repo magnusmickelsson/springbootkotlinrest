@@ -36,7 +36,7 @@
             <artifactId>h2</artifactId>
         </dependency>
 
-        <!-- Kotlin (Optional) -->
+        <!-- Kotlin (Optional, can use pure Java instead - in that case remove Kotlin stuff from build tag) -->
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-stdlib-jdk8</artifactId>
@@ -59,7 +59,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency> <!-- Optional -->
+        <dependency> <!-- Optional, can use pure Spring test functionality instead -->
             <groupId>com.jayway.restassured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>${rest-assured.version}</version>
