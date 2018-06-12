@@ -13,6 +13,7 @@ import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.boot.test.context.SpringBootTest
+import org.springframework.boot.web.server.LocalServerPort
 import org.springframework.test.context.junit4.SpringRunner
 
 @RunWith(SpringRunner::class)
@@ -22,7 +23,7 @@ import org.springframework.test.context.junit4.SpringRunner
 class RestApplicationTest {
     val logger = LoggerFactory.getLogger(javaClass)
 
-    @Value("\${local.server.port}")
+    @LocalServerPort
     var port: Int = 0
 
     @Autowired
