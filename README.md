@@ -21,7 +21,7 @@ To run the tests, use the RestApplicationTest class.
 
 ## The lightning talk live-coding
 
-The presentation is pretty much three slides, will be put here when it's done.
+The presentation is included in the repository, it's in Powerpoint format: [presentation.pptx]()
 
 For the live coding, switch from master branch to the "for-demo" branch, which has no code in it,
 just the pom.xml, application.properties and the documentation .md files.
